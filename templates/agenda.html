@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agenda</title>
+    <link href="{{url_for('static', filename='agenda.css')}}" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+  <h1 class="2-container">hoihoi</h1>
+     <ol>
+       <li2><a href="{{ url_for('index') }}">Home</a></li2>
+       <li2><a class="active" href="{{ url_for('agenda') }}">Agenda</a></li2>
+       <li2><a href="{{ url_for('contact') }}">Contact</a></li2>
+       <li2><a href="{{ url_for('about') }}">Over ons</a></li2>
+       <h1 class="title">RESERVEREN</h1>
+     </ol>
+    <div class="container">
+      <ul>
+          {% for date in dates %}
+              <li>{{ date.strftime('%a %d %B') }}</li>
+          {% endfor %}
+      </ul>
+    </div>
+  <div class="footer">
+      <ul class="a" style="list-style-type:none">
+      <li class="a" style="font-weight: bold; font-size: 160%;">Contact:</li>
+      <li class="a">tel: 0342-1435255</li>
+      <li class="a">mail: kapper@aardappelklapper.nl</li>
+  </ul>
+  </div>
+  </body>
+</html>
