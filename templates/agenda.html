@@ -8,22 +8,22 @@
     <title>Agenda</title>
     <link href="{{url_for('static', filename='agenda.css')}}" type="text/css" rel="stylesheet">
   </head>
-  <body>
-  <h1 class="2-container">hoihoi</h1>
-     <ol>
+  <STYLE>A {text-decoration: none;} </STYLE>
+<body>
+<ol>
        <li2><a href="{{ url_for('index') }}">Home</a></li2>
        <li2><a class="active" href="{{ url_for('agenda') }}">Agenda</a></li2>
        <li2><a href="{{ url_for('contact') }}">Contact</a></li2>
-       <li2><a href="{{ url_for('about') }}">Over ons</a></li2>
+       <li2><a href="{{ url_for('team') }}">Team</a></li2>
        <h1 class="title">RESERVEREN</h1>
-     </ol>
-    <div class="container">
-      <ul>
-          {% for date in dates %}
-              <li>{{ date.strftime('%a %d %B') }}</li>
-          {% endfor %}
-      </ul>
-    </div>
+</ol>
+
+{% for date in dates %}
+        <li>
+            <a class="clearfix container" href="{{ url_for('benis', var=date) }}">{{ date.strftime('%a %d %B') }}</a>
+        </li>
+{% endfor %}
+
   <div class="footer">
       <ul class="a" style="list-style-type:none">
       <li class="a" style="font-weight: bold; font-size: 160%;">Contact:</li>

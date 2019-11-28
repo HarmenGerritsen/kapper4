@@ -18,17 +18,25 @@ h2 {
     opacity: 0;
 }
 
-.box {
-    align: center;
-    background-color: white;
-    border: solid 5px white;
-    color: black;
-    width: 88%;
-    height: auto;
-    padding: 5px;
-    margin: 200px auto 5%;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+.image {
+    object-fit: cover;
+    width: 20%;
+    height: 300px;
+    margin: 200px 2.5% auto;
+    float: left;
+}
 
+.imgtext {
+    width: 16%;
+    height: 300px;
+    margin: 0 2.5% auto;
+    float: left;
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    font-size: 70%;
+    padding: 2%;
 }
 
 ul {
@@ -78,5 +86,9 @@ body {
 @media only screen and (max-width: 600px) {
   .title {
    display: none;
+  }
+    .image {
+    width: 80%;
+    margin-left: 10%;
   }
 }

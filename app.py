@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from loguru import logger
 import datetime
 app = Flask(__name__)
 
@@ -12,8 +13,15 @@ def agenda():
     return render_template('agenda.html', tijd='tijd', maand='maand', dates=output)
 
 
+@app.route('/benis<var>')
+def benis(var):
+    print(var)
+    return 'Success <var>'
+
+
 @app.route('/')
 def index():
+    logger.info('harmen likes bois')
     return render_template('main.html')
 
 
@@ -22,9 +30,9 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+@app.route('/team')
+def team():
+    return render_template('team.html')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% for date in dates %}
+        <li>
+            <a href="{{ url_for('benis', var=date) }}">{{ date.strftime('%a %d %B') }}</a>
+        </li>
+    {% endfor %}
+</head>
+<body>
+
+</body>
+</html>
