@@ -16,7 +16,7 @@ def agenda():
 @app.route('/benis<var>')
 def benis(var):
     print(var)
-    return 'Success <var>'
+    return render_template('succes.html')
 
 
 @app.route('/')

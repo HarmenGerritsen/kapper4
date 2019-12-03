@@ -21,13 +21,12 @@ h2 {
     color: black;
     width: 40%;
     height: auto;
-    margin-left: 30%;
-    margin-top: 15%;
+    margin: 15% 30% auto;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 20px;
     font-family: Helvetica, serif;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 li2 {
@@ -94,6 +93,8 @@ input {
     background-color: #434343;
     color: white;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .title {
