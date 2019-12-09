@@ -70,6 +70,11 @@ li a:hover:not(.active) {
 .active {
   background-color: #b8a88a;
 }
+
+.active:hover {
+    background-color: #a7967c;
+}
+
 body {
     background: url(https://s3.pixers.pics/pixers/700/FO/97/89/90/49/700_FO97899049_ac89fd7e990a17c89c08576a42e8f5c3.jpg) fixed center;
     margin: 0;

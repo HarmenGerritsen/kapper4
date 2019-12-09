@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Afspraak maken</title>
-    <link href='{{ url_for('static', filename='succes.css') }}' rel='stylesheet'/>
+    <link href='{{ url_for('static', filename='contact.css')}}' rel='stylesheet'/>
 </head>
+<STYLE>a {text-decoration: none;}</STYLE>
 <body>
  <ul>
   <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -15,6 +16,22 @@
   <li><a href="{{ url_for('team') }}">Team</a></li>
   <h1 class="title">Afspraak maken</h1>
 </ul>
+
+<form action="mailto:kapper@aardappelklapper.com" method="post" enctype="multipart/form-data" class="box">
+    <a class="close" href="{{ url_for('agenda') }}"><strong>X</strong> Close</a>
+    <h1 class="datum">{{ datum }}</h1><br>
+    Tijd:<br>
+    <input type="time"><br>
+    Soort afspraak:<br>
+    <input type="text"><br>
+    Kapper:<br>
+    <input type="text"><br>
+    E-mail:<br>
+    <input type="email"><br>
+    <br>
+    <input type="submit" value="Send" class="button1">
+    <input type="reset" value="Reset" class="button2">
+</form>
 
 </body>
 </html>

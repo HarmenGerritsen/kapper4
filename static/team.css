@@ -72,6 +72,10 @@ li a:hover:not(.active) {
   background-color: #b8a88a;
 }
 
+.active:hover {
+    background-color: #a7967c;
+}
+
 .foto {
     width: 20%;
     height: auto;
