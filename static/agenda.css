@@ -1,6 +1,6 @@
 
 body {
-    background: url(wallpaper.jpg) fixed center;
+    background: url(https://st4.depositphotos.com/2389541/22525/v/1600/depositphotos_225256284-stock-illustration-damask-vector-seamless-pattern-vintage.jpg) fixed center;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ body {
     height: 107px;
     text-align: center;
     opacity: 0.95;
-    background-color: #ffffff;
+    background-color: #ffedf6;
     text-shadow: 1px 1px #808080;
     font-family: Trebuchet MS, sans-serif;
     box-shadow: 2px 2px 2px 2px #ffffff inset;
@@ -71,11 +71,11 @@ li2 a:hover:not(.active) {
 }
 
 .active {
-  background-color: #b8a88a;
+  background-color: #b87484;
 }
 
 .active:hover {
-    background-color: #a7967c;
+    background-color: #b87484;
 }
 
 .footer {
@@ -84,7 +84,7 @@ li2 a:hover:not(.active) {
     text-align: center;
     text-shadow: 1px 1px grey;
     font-family: Trebuchet MS, sans-serif;
-    background-color: #f0e0bc;
+    background-color: #f096a9;
     float: bottom;
     height: 100px;
     position: fixed;

@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from loguru import logger
+
 import datetime
 app = Flask(__name__)
 
